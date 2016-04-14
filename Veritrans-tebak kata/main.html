@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="tebak.js"></script>
+    <title>Tebak Kata</title>
+</head>
+<body>
+<h1>Game Tebak Kata</h1>
+
+<div id="container">
+    <div id="header"></div>
+    <div id="content1">
+        <div id="text1">
+            <div class="heading">MULAI MENEBAK KATA</div><br>
+            <p>Jangan sampai salah tebak karena akan mempengaruhi skor mu !!</p>
+            <br>
+            <br>
+            <br>
+
+            <form name="f">
+
+                <table bgcolor="#9370db" border="1">
+                    <tr>
+                        <td colspan="4" align="right">
+                            Score : <input type="text" name="score" value="0" onfocus="score.blur();" size="2" />
+                            <br/>
+                            Fails (6) : <input type="text" name="lives" value="0" onfocus="lives.blur();" size="2" />
+                        </td>
+
+                        <td colspan="7" align="center">
+                            <input type="text" name="word" value="Tebak Kata" onfocus="word.blur();" size="25" />
+                            <br/>
+                            <input type="text" name="tried" value="Klik Mulai" onfocus="tried.blur();" size="25" />
+                        </td>
+                        <td colspan="2" align="center">
+                            <input type="button" onclick="new_word(this.form);" value="Mulai" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="A" onclick="seek('A');" /></td>
+                        <td><input type="button" value="B" onclick="seek('B');" /></td>
+                        <td><input type="button" value="C" onclick="seek('C');" /></td>
+                        <td><input type="button" value="D" onclick="seek('D');" /></td>
+                        <td><input type="button" value="E" onclick="seek('E');" /></td>
+                        <td><input type="button" value="F" onclick="seek('F');" /></td>
+                        <td><input type="button" value="G" onclick="seek('G');" /></td>
+                        <td><input type="button" value="H" onclick="seek('H');" /></td>
+                        <td><input type="button" value="I" onclick="seek('I');" /></td>
+                        <td><input type="button" value="J" onclick="seek('J');" /></td>
+                        <td><input type="button" value="K" onclick="seek('K');" /></td>
+                        <td><input type="button" value="L" onclick="seek('L');" /></td>
+                        <td><input type="button" value="M" onclick="seek('M');" /></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="N" onclick="seek('N');" /></td>
+                        <td><input type="button" value="O" onclick="seek('O');" /></td>
+                        <td><input type="button" value="P" onclick="seek('P');" /></td>
+                        <td><input type="button" value="Q" onclick="seek('Q');" /></td>
+                        <td><input type="button" value="R" onclick="seek('R');" /></td>
+                        <td><input type="button" value="S" onclick="seek('S');" /></td>
+                        <td><input type="button" value="T" onclick="seek('T');" /></td>
+                        <td><input type="button" value="U" onclick="seek('U');" /></td>
+                        <td><input type="button" value="V" onclick="seek('V');" /></td>
+                        <td><input type="button" value="W" onclick="seek('W');" /></td>
+                        <td><input type="button" value="X" onclick="seek('X');" /></td>
+                        <td><input type="button" value="Y" onclick="seek('Y');" /></td>
+                        <td><input type="button" value="Z" onclick="seek('Z');" /></td>
+
+
+                    </tr>
+                </table>
+
+            </form>
+
+        </div>
+    </div>
+    <div id="footer"></div>
+</div>
+
+
+
+</body>
+</html>
